@@ -21,3 +21,13 @@
 ```bash
 git clone https://github.com/your-repo-url/BaseConverter.git
 cd BaseConverter
+go mod tidy
+go run main.go
+```
+
+### 打包可执行文件
+- 如果你想生成可执行文件，可以使用以下命令：
+```bash
+fyne package -os windows -icon BaseConverterLogo.png
+```
+- release中有提供windows系统下的可执行文件
